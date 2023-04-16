@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ontherunstyle.css">
+    <link rel="icon" href="skull.png" type="image/icon png">
+    <title>On the run</title>
+</head>
+<body>
+    <a id="linktomain" href="index.html">Come back to the main page</a>
+    <h1 id="header">On the run</h1>
+    <div id="text-container" class="text-container">
+        <p>Lorem ipsum   dolor sit amet consectetur, adipisicing elit. Laudantium 
+            ex aspernatur aliquam itaque nesciunt optio at in officia, 
+            nihil deserunt sit neque quod maxime magnam amet vero quis numquam explicabo.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Aperiam odit minus quisquam quia ipsa assumenda quas, harum
+             deserunt ad vel temporibus maxime illo dolor veritatis
+             similique delectus autem! Obcaecati, consequatur?
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam 
+             vitae saepe quo quia alias consequuntur error illo pariatur excepturi eveniet
+              explicabo architecto qui cumque, fugiat commodi id suscipit eum cum?
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores fugiat
+               ipsum iste ipsa aut numquam iure voluptatum tempore rerum sint ratione,
+               aperiam reiciendis voluptates excepturi rem hic officiis omnis vitae?
+        </p>
+    </div>
+    <div id="cart">
+        <h1 id="hovertoclick">Hover/click to change the style</h1> 
+        <button id="red" onclick="changeDefault()">1st style</button>
+        <button id="red" onclick="changeRed()">2nd style</button>
+        <button id="blue" onclick="changeBlue()">3rd style</button>
+        <button id="green" onclick="changeGreen()">4th style</button>
+        <button id="purple" onclick="changePurple()">5th style</button>
+    </div>
+    <script>
+        let cat = document.getElementById('cart');
+        let red = document.getElementById('red');
+        let blue = document.getElementById('blue');
+        let green = document.getElementById('green');
+        let purple = document.getElementById('puprle')
+        let textContainer = document.getElementById('text-container');
+        function changeDefault() {
+            document.body.style.backgroundColor = "rgb(19, 13, 13)";
+            textContainer.style.fontFamily = "Arial";
+            document.getElementById('header').style.color = "purple";
+            document.getElementById('linktomain').style.color = "purple";
+        }
+        function changeRed() {
+            document.body.style.backgroundColor = "rgb(79, 14, 14)";
+            textContainer.body.style.fontFamily = "monospace";
+            document.getElementById('header').style.color = "white";
+            document.getElementById('linktomain').style.color = "white";
+            
+        }
+        function changeBlue() {
+            document.body.style.backgroundColor = "blue";
+            document.getElementById('header').style.color = "purple";
+            document.getElementById('linktomain').style.color = "purple";
+        }
+        function changeGreen() {
+            document.body.style.backgroundColor = "green";
+            document.getElementById('header').style.color = "black";
+            document.getElementById('linktomain').style.color = "black";
+        }
+        function changePurple() {
+            document.body.style.backgroundColor = "purple";
+            document.getElementById('header').style.color = "black";
+            document.getElementById('linktomain').style.color = "black";
+            document.getElementById('hovertoclick').style.color = "wheat";
+        }
+    </script>
+</body>
+</html>

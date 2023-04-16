@@ -1,0 +1,194 @@
+body {
+    background-color: rgb(19, 13, 13);
+    margin: 0;
+   align-items: center;
+   align-content: center;
+   }
+   nav {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: row;
+       width: 100%;
+       color: white;
+       margin: 0;
+       padding: 0;
+       min-width: max-content;
+   }
+   .top-container {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       width: 99.4%;
+       height: 100%;
+       background-color: black;                          
+       height: 174px;
+       border-bottom: 4px solid rgb(182, 17, 17);
+       border-right: 4px solid rgb(182, 17, 17);
+       border-left: 4px solid rgb(182, 17, 17);
+       padding-top: 6px;
+       font-family: sans-serif;
+       margin-left: auto;
+       margin-right: auto;
+       border-bottom-left-radius: 12px;
+       border-bottom-right-radius: 12px;
+       animation: top-an 250ms ease-in 30ms;
+   }
+   @keyframes top-an {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+   .element {
+       float: left;
+       margin-left: 33px;
+       border-left: 1px solid red;
+       border-right: 1px solid red;
+       border-bottom: 1px solid black;
+       border-top: 1px solid black;
+       cursor: pointer;
+       transition: all 0.25s;
+       padding-left: 15px;
+       padding-right: 15px;
+   }
+   .element:hover,
+   a:hover {
+       color: rgb(139, 6, 6);
+       border-left: 1px solid black;
+       border-right: 1px solid black;
+       border-bottom: 1px solid red;
+       border-top: 1px solid red;
+   }
+   .el1 {
+    color: rgb(139, 6, 6);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid red;
+    border-top: 1px solid red;
+    text-decoration: none;
+}
+   ul {
+       list-style: none;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       font-weight: 700;
+       font-size: x-large;
+   }
+   a {
+       text-decoration: none;
+       color: white;
+       border-left: 1px solid red;
+       border-right: 1px solid red;
+       border-bottom: 1px solid black;
+       border-top: 1px solid black;
+       transition: all 0.125s;
+   }
+   form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    animation: bre 250ms ease-in 30ms;
+   }
+   @keyframes bre {
+    0% {
+        transform: translateY(200%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+   }
+   label {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+    text-shadow: 0 0 10px #FF0000, 0 0 10px #0000FF;
+   }
+   .line {
+    height: 20px;
+    width: 80%;
+    border-bottom: solid 2px rgb(68, 25, 25);
+   }
+   legend {
+    font-size: x-large;
+    color: wheat;
+    text-shadow: 0 0 5px #FF0000, 0 0 5px #0000FF;
+   }
+   .question_container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+   }
+   .B {
+    margin-left: 20px;
+    color: rgb(180, 128, 30);
+   }
+   .buttonn {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    padding: 20px;
+    width: 400px;
+    height: 30px;
+    cursor: pointer;
+    text-shadow: 0 0 5px #4b2f2f, 0 0 5px #1c1c38;
+    box-shadow: 0 0 5px #FF0000, 0 0 5px #0000FF;
+    border-radius: 8px;
+    background-color: rgb(51, 40, 40);
+    color: wheat;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: x-large;
+    
+   }
+   .buttonnn {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 30px;
+    cursor: pointer;
+    text-shadow: 0 0 5px #4b2f2f, 0 0 5px #1c1c38;
+    box-shadow: 0 0 5px #FF0000, 0 0 5px #0000FF;
+    border-radius: 8px;
+    background-color: rgb(51, 40, 40);
+    color: wheat;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: x-large;
+    
+   }
+   @media (max-width: 1000px) {
+    nav {
+        display: flex;
+
+    }
+    .top-container {
+        height: 400px;
+        text-align: center;
+    }
+    .element {
+        float: left;
+    }
+    ul {
+        display: flex;
+    flex-direction: column;
+    }
+    .element:hover,
+a:hover {
+    color: rgb(139, 6, 6);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid red;
+    border-top: 1px solid red;
+}
+}

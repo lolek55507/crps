@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="listen.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@600&display=swap" rel="stylesheet">
+<link rel="icon" href="skull.png" type="image/icon png">
+    <title>Creepy stories</title>
+</head>
+<body>
+    <div class="top-container">
+        <div class="elemen1"><img class="logo" src="logo-middle.png"></div>
+        <nav>
+            <ul>
+                <li class="element"><a href="index.html">Home</a></li>
+                <li class="element"><a href="read.html">Read stories</a></li>
+                <li class="element"><a href="type.html">Type stories</a></li>
+                <li class="el1 element"><a  class="el1" href="listen.html">Listen to stories</a></li>
+                <li class="element"><a href="feedback.html">Feedback</a></li>
+                <li class="element"><a href="shop.html">Shop</a></li>
+                <li class="element"><a href="C:\Users\Default.DESKTOP-LD6JUI4\Desktop\crps\contact-page/contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="circle" id="circlea">
+            <h1 id="circleTextA" class="pc">Nightmare on the Beach</h1>
+        </div>
+        <div id="circleb" class="circle">
+            <h1 id="circleTextB" class="pc">The drag</h1>
+        </div>
+        <div id="circlec" class="circle">
+            <h1 id="circleTextC" class="pc">On the run</h1>
+        </div> 
+    </div>
+    <button  onclick="stopColor()" id="colourStop">Stop the colour</button>
+    <script>
+        let i = 0;
+        function stopColor() {
+            if (i == 0) {
+                
+                let a = document.getElementById('circlea');
+            a.style.animationPlayState = "paused";
+            let b = document.getElementById('circleb');
+            b.style.animationPlayState = "paused";
+            let c = document.getElementById('circlec');
+            c.style.animationPlayState = "paused";
+            let d = document.getElementById('circleTextC');
+            d.style.animationPlayState = "paused";
+            let e = document.getElementById('circleTextB');
+            e.style.animationPlayState = "paused";
+            let f = document.getElementById('circleTextA');
+            f.style.animationPlayState = "paused";
+            let text = document.getElementById('colourStop');
+            text.innerText = "Start the colour";
+            i++;
+            } else {
+                let a = document.getElementById('circlea');
+            a.style.animationPlayState = "running";
+            let b = document.getElementById('circleb');
+            b.style.animationPlayState = "running";
+            let c = document.getElementById('circlec');
+            c.style.animationPlayState = "running";
+            let d = document.getElementById('circleTextC');
+            d.style.animationPlayState = "running";
+            let e = document.getElementById('circleTextB');
+            e.style.animationPlayState = "running";
+            let f = document.getElementById('circleTextA');
+            f.style.animationPlayState = "running";
+            let text = document.getElementById('colourStop');
+            text.innerText = "Stop the colour";
+            i--;
+            }
+            
+        }
+    </script>
+
+    </body>
+    </html>

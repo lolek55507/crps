@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(19, 13, 13);
+    text-align: center;
+}
+.text-container {
+    text-align: center;
+    font-family: Arial;
+    font-weight: 700;
+    color: white;
+}
+h1 {
+    color: purple;
+    font-family: Arial;
+    font-weight: 700;
+}
+a {
+    position: absolute;
+    left: 0;
+    font-size: x-large;
+}
+#cart {
+    position: absolute;
+    bottom: 0;
+    left: 39%;
+    transform: translateY(30%);
+    transition: all 250ms;
+}
+#cart:hover {
+    transform: none;
+}
